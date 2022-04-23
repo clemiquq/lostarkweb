@@ -1,0 +1,118 @@
+<style>/*! elementor - v3.6.4 - 13-04-2022 */<br />
+.e-container.e-container--row .elementor-spacer-inner{width:var(--spacer-size)}.e-container.e-container--column .elementor-spacer-inner,.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}</style>
+<style>/*! elementor - v3.6.4 - 13-04-2022 */<br />
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
+<h1>强化计算器</h1>
+<h3>1、输入价格</h3>
+<input type="number" min="0" placeholder="输入突破石价格" name="leapstone_price" value="">
+<input type="number" min="0" placeholder="输入强化石x10价格" name="stone_price">
+<input type="number" min="0" placeholder="输入爆米花价格" name="oreha_price">
+<input type="number" min="0" placeholder="输入狗粮x500价格" name="shard_price">
+<input type="number" min="0" placeholder="输入绿添加石价格" name="green_price">
+<input type="number" min="0" placeholder="输入蓝添加石价格" name="blue_price">
+<input type="number" min="0" placeholder="输入紫添加石价格" name="purple_price">
+<input type="number" min="0" placeholder="输入银币x1000价格" name="silver_price">
+<h2>2、选择计算目标</h2>
+<a href="#" type="button" name="button_1302" role="button" onclick="isActive1()">
+T3(1302)
+</a>
+<a href="#" type="button" name="button_1370" role="button" onclick="isActive1()">
+T3(1370)
+</a>
+<a href="#" type="button" name="button_weapon" role="button" onclick="isActive2()">
+武器
+</a>
+<a href="#" type="button" name="button_armor" role="button" onclick="isActive2()">
+护甲
+</a>
+<select id="select3">
+<option selected="">请选择</option>
+<option value="7">+6 到 +7</option>
+<option value="8">+7 到 +8</option>
+<option value="9">+8 到 +9</option>
+<option value="10">+9 到 +10</option>
+<option value="11">+10 到 +11</option>
+<option value="12">+11 到 +12</option>
+<option value="13">+12 到 +13</option>
+<option value="14">+13 到 +14</option>
+<option value="15">+14 到 +15</option>
+</select>
+<a href="#" type="button" role="button" onclick="start()">
+开始计算
+</a>
+<h2>3、计算结果</h2>
+平均强化多少次成功（数学期望）：
+
+是否加入添加石：
+
+（对比无添加），可以帮你节省：
+
+每次强化等价于花费多少钱：
+
+<style>
+	.active1{<br />
+		background-color:green;<br />
+	}<br />
+</style>
+<style>
+	.active2{<br />
+		background-color:orange;<br />
+	}<br />
+</style>
+<style type="text/css">
+.button{<br />
+width: 140px;<br />
+line-height: 38px;<br />
+text-align: center;<br />
+font-weight: bold;<br />
+color: #fff;<br />
+text-shadow:1px 1px 1px #333;<br />
+border-radius: 5px;<br />
+}<br />
+.active1{<br />
+    background-color: #ff914d;<br />
+    border: none;<br />
+    color: white;<br />
+    padding: 15px 32px;<br />
+    text-align: center;<br />
+    text-decoration: none;<br />
+    display: inline-block;<br />
+    font-size: 16px;<br />
+    border-radius: 7px;<br />
+}<br />
+	</style>
+<style type="text/css">
+.button{<br />
+width: 140px;<br />
+line-height: 38px;<br />
+text-align: center;<br />
+font-weight: bold;<br />
+color: #fff;<br />
+text-shadow:1px 1px 1px #333;<br />
+border-radius: 5px;<br />
+}<br />
+.button_start{<br />
+    background-color: #ff914d;<br />
+    border: none;<br />
+    color: white;<br />
+    padding: 15px 32px;<br />
+    text-align: center;<br />
+    text-decoration: none;<br />
+    display: inline-block;<br />
+    font-size: 16px;<br />
+    border-radius: 7px;<br />
+}<br />
+	</style>
+<style type="text/css">
+.active2{<br />
+    background-color: #ff914d;<br />
+    border: none;<br />
+    color: white;<br />
+    padding: 15px 32px;<br />
+    text-align: center;<br />
+    text-decoration: none;<br />
+    display: inline-block;<br />
+    font-size: 16px;<br />
+    border-radius: 7px;<br />
+}<br />
+	</style>
