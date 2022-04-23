@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+
+	 <title>Gear Check - tooki.app</title>
+        
+        
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico?v=4" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJB0JCY7T5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VJB0JCY7T5');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1335895323165412"
+     crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightfall.min.css" rel="stylesheet">
+     
+<style>
+
+@media (min-width: 992px) and (max-width: 1200px) {
+.modal-xl {
+    max-width: 90%;
+}
+}
+
+</style>
+
+</head>
+
+
+
+  <style>
+  .gear {
+    margin:3px;
+  }
+
+  .gear_category {
+    font-size:.875em;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+</style>
+
+<div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content rounded-5 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+
+<div class="row">
+<div class="col-sm-12" style="display:table;">
+<h2 class="fs-5 fw-bold" style="vertical-align: middle;display: table-cell;"> 
+<a class="btn btn-outline-light btn-sm" href="/">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+</svg> Back</a>
+<c style="vertical-align: middle;margin-left:5px;">Gear Check Tool</c></h2>
+</div>
+</div>
+
+      </div>
+      <div class="modal-body p-5 pt-0">
+<div class="row">
+<div class="col-sm-6">
+<small class="text-muted">Stat #1</small>
+<select id="stat_1" class="form-select form-select-lg mb-2" aria-label=".form-select-sm example">
+  <option selected>Select</option>
+  <option value="Crit">Crit</option>
+  <option value="Specialization">Specialization</option>
+  <option value="Domination">Domination</option>
+  <option value="Swiftness">Swiftness</option>
+  <option value="Endurance">Endurance</option>
+  <option value="Expertise">Expertise</option>
+</select>
+</div>
+<div class="col-sm-6">
+<small class="text-muted">Stat #2</small>
+<select id="stat_2" class="form-select form-select-lg mb-2" aria-label=".form-select-sm example">
+  <option selected>Select</option>
+  <option value="Crit">Crit</option>
+  <option value="Specialization">Specialization</option>
+  <option value="Domination">Domination</option>
+  <option value="Swiftness">Swiftness</option>
+  <option value="Endurance">Endurance</option>
+  <option value="Expertise">Expertise</option>
+</select>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+<small class="text-muted">Engraving #1</small>
+<select id="engraving_1" class="form-select form-select-lg mb-2" aria-label=".form-select-sm example">
+<option selected>Select</option>
+<option value="Adrenaline">Adrenaline</option>
+<option value="All-Out Attack">All-Out Attack</option>
+<option value="Ambush Master">Ambush Master</option>
+<option value="Awakening">Awakening</option>
+<option value="Barrage Enhancement">Barrage Enhancement</option>
+<option value="Barricade">Barricade</option>
+<option value="Berserker's Technique">Berserker's Technique</option>
+<option value="Blessed Aura">Blessed Aura</option>
+<option value="Broken Bone">Broken Bone</option>
+<option value="Combat Readiness">Combat Readiness</option>
+<option value="Contender">Contender</option>
+<option value="Crisis Evasion">Crisis Evasion</option>
+<option value="Crushing Fist">Crushing Fist</option>
+<option value="Cursed Doll">Cursed Doll</option>
+<option value="Death Strike">Death Strike</option>
+<option value="Deathblow">Deathblow</option>
+<option value="Demonic Impulse">Demonic Impulse</option>
+<option value="Desperate Salvation">Desperate Salvation</option>
+<option value="Disrespect">Disrespect</option>
+<option value="Divine Protection">Divine Protection</option>
+<option value="Drops of Ether">Drops of Ether</option>
+<option value="Emergency Rescue">Emergency Rescue</option>
+<option value="Energy Overflow">Energy Overflow</option>
+<option value="Enhanced Shield">Enhanced Shield</option>
+<option value="Enhanced Weapon">Enhanced Weapon</option>
+<option value="Esoteric Flurry">Esoteric Flurry</option>
+<option value="Esoteric Skill Enhancement">Esoteric Skill Enhancement</option>
+<option value="Ether Predator">Ether Predator</option>
+<option value="Expert">Expert</option>
+<option value="Explosive Expert">Explosive Expert</option>
+<option value="Firepower Enhancement">Firepower Enhancement</option>
+<option value="First Intention">First Intention</option>
+<option value="Fortitude">Fortitude</option>
+<option value="Grudge">Grudge</option>
+<option value="Heavy Armor">Heavy Armor</option>
+<option value="Hit Master">Hit Master</option>
+<option value="Igniter">Igniter</option>
+<option value="Increase Mass">Increase Mass</option>
+<option value="Judgment">Judgment</option>
+<option value="Keen Blunt Weapon">Keen Blunt Weapon</option>
+<option value="Lightning Fury">Lightning Fury</option>
+<option value="Lone Knight">Lone Knight</option>
+<option value="Loyal Companion">Loyal Companion</option>
+<option value="Magick Stream">Magick Stream</option>
+<option value="Master Brawler">Master Brawler</option>
+<option value="Master of Escape">Master of Escape</option>
+<option value="Master's Tenacity">Master's Tenacity</option>
+<option value="Max MP Increase">Max MP Increase</option>
+<option value="Mayhem">Mayhem</option>
+<option value="MP Efficiency Increase">MP Efficiency Increase</option>
+<option value="Necromancy">Necromancy</option>
+<option value="Peacemaker">Peacemaker</option>
+<option value="Perfect Suppression">Perfect Suppression</option>
+<option value="Pistoleer">Pistoleer</option>
+<option value="Precise Dagger">Precise Dagger</option>
+<option value="Preemptive Strike">Preemptive Strike</option>
+<option value="Propulsion">Propulsion</option>
+<option value="Raid Captain">Raid Captain</option>
+<option value="Reflux">Reflux</option>
+<option value="Remaining Energy">Remaining Energy</option>
+<option value="Robust Spirit">Robust Spirit</option>
+<option value="Shield Piercing">Shield Piercing</option>
+<option value="Shock Training">Shock Training</option>
+<option value="Sight Focus">Sight Focus</option>
+<option value="Spirit Absorption">Spirit Absorption</option>
+<option value="Stablized Status">Stablized Status</option>
+<option value="Strong Will">Strong Will</option>
+<option value="Super Charge">Super Charge</option>
+<option value="Surge">Surge</option>
+<option value="Time to Hunt">Time to Hunt</option>
+<option value="True Courage">True Courage</option> 
+<option value="Ultimate Skill: Taijutsu">Ultimate Skill: Taijutsu</option>
+<option value="Vital Point Hit">Vital Point Hit</option>
+</select>
+</div>
+<div class="col-sm-6">
+<small class="text-muted">Engraving #2</small>
+<select id="engraving_2" class="form-select form-select-lg mb-2" aria-label=".form-select-sm example">
+<option selected>Select</option>
+<option value="Adrenaline">Adrenaline</option>
+<option value="All-Out Attack">All-Out Attack</option>
+<option value="Ambush Master">Ambush Master</option>
+<option value="Awakening">Awakening</option>
+<option value="Barrage Enhancement">Barrage Enhancement</option>
+<option value="Barricade">Barricade</option>
+<option value="Berserker's Technique">Berserker's Technique</option>
+<option value="Blessed Aura">Blessed Aura</option>
+<option value="Broken Bone">Broken Bone</option>
+<option value="Combat Readiness">Combat Readiness</option>
+<option value="Contender">Contender</option>
+<option value="Crisis Evasion">Crisis Evasion</option>
+<option value="Crushing Fist">Crushing Fist</option>
+<option value="Cursed Doll">Cursed Doll</option>
+<option value="Death Strike">Death Strike</option>
+<option value="Deathblow">Deathblow</option>
+<option value="Demonic Impulse">Demonic Impulse</option>
+<option value="Desperate Salvation">Desperate Salvation</option>
+<option value="Disrespect">Disrespect</option>
+<option value="Divine Protection">Divine Protection</option>
+<option value="Drops of Ether">Drops of Ether</option>
+<option value="Emergency Rescue">Emergency Rescue</option>
+<option value="Energy Overflow">Energy Overflow</option>
+<option value="Enhanced Shield">Enhanced Shield</option>
+<option value="Enhanced Weapon">Enhanced Weapon</option>
+<option value="Esoteric Flurry">Esoteric Flurry</option>
+<option value="Esoteric Skill Enhancement">Esoteric Skill Enhancement</option>
+<option value="Ether Predator">Ether Predator</option>
+<option value="Expert">Expert</option>
+<option value="Explosive Expert">Explosive Expert</option>
+<option value="Firepower Enhancement">Firepower Enhancement</option>
+<option value="First Intention">First Intention</option>
+<option value="Fortitude">Fortitude</option>
+<option value="Grudge">Grudge</option>
+<option value="Heavy Armor">Heavy Armor</option>
+<option value="Hit Master">Hit Master</option>
+<option value="Igniter">Igniter</option>
+<option value="Increase Mass">Increase Mass</option>
+<option value="Judgment">Judgment</option>
+<option value="Keen Blunt Weapon">Keen Blunt Weapon</option>
+<option value="Lightning Fury">Lightning Fury</option>
+<option value="Lone Knight">Lone Knight</option>
+<option value="Loyal Companion">Loyal Companion</option>
+<option value="Magick Stream">Magick Stream</option>
+<option value="Master Brawler">Master Brawler</option>
+<option value="Master of Escape">Master of Escape</option>
+<option value="Master's Tenacity">Master's Tenacity</option>
+<option value="Max MP Increase">Max MP Increase</option>
+<option value="Mayhem">Mayhem</option>
+<option value="MP Efficiency Increase">MP Efficiency Increase</option>
+<option value="Necromancy">Necromancy</option>
+<option value="Peacemaker">Peacemaker</option>
+<option value="Perfect Suppression">Perfect Suppression</option>
+<option value="Pistoleer">Pistoleer</option>
+<option value="Precise Dagger">Precise Dagger</option>
+<option value="Preemptive Strike">Preemptive Strike</option>
+<option value="Propulsion">Propulsion</option>
+<option value="Raid Captain">Raid Captain</option>
+<option value="Reflux">Reflux</option>
+<option value="Remaining Energy">Remaining Energy</option>
+<option value="Robust Spirit">Robust Spirit</option>
+<option value="Shield Piercing">Shield Piercing</option>
+<option value="Shock Training">Shock Training</option>
+<option value="Sight Focus">Sight Focus</option>
+<option value="Spirit Absorption">Spirit Absorption</option>
+<option value="Stablized Status">Stablized Status</option>
+<option value="Strong Will">Strong Will</option>
+<option value="Super Charge">Super Charge</option>
+<option value="Surge">Surge</option>
+<option value="Time to Hunt">Time to Hunt</option>
+<option value="True Courage">True Courage</option> 
+<option value="Ultimate Skill: Taijutsu">Ultimate Skill: Taijutsu</option>
+<option value="Vital Point Hit">Vital Point Hit</option>
+</select>
+</div>
+</div>
+
+          <button class="w-100 mb-4 mt-2 btn btn-lg rounded-4 btn-primary" onclick="check_gear()">Check Gear</button>
+
+<div id="results_holder" class="row">
+
+</div>
+      </div>
+                    <div class="modal-footer" style="text-align:center;display:block;">
+        <div class="col-sm-12">
+        <a style="margin:5px;" href="/updates" class="text-muted">Updates</small></a>
+        <a style="margin:5px;" href="/contact" class="text-muted">Contact</small></a>
+        <a style="margin:5px;" href="/terms" class="text-muted">Terms & Conditions</small></a>
+        <a style="margin:5px;" href="/privacy-policy" class="text-muted">Privacy Policy</a>
+        </div>
+        <div class="col-sm-12">
+          <!--<div class="d-grid gap-2 col-3 mx-auto mt-2">-->
+          <div class="mt-2">
+            <a href="/" class="btn btn-outline-secondary">Home</a>          </div>
+        </div> 
+
+      </div>    </div>
+  </div>
+</div>
+
+<footer>
+<script src="/assets/js/gear-check.js?v=1.0.4"></script>
+
+
+</footer>
+</html>
